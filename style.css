@@ -6,8 +6,9 @@
 }
 
 .meme-generator img {
-    height: 430px;
-    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .meme-generator {
@@ -18,7 +19,8 @@
 }
 
 .generate-meme-btn {
-    background-color: rgb(47, 192, 143);
+
+    background-color: rgb(26, 152, 110);
     border: none;
     padding: 20px 40px;
     border-radius: 5px;
@@ -30,7 +32,7 @@
     transition: ease-in-out 0.3s;
 }
 .generate-meme-btn:hover {
-    background-color: rgb(26, 152, 110);
+    background-color: rgb(47, 192, 143);
     color: #fff;
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.3);
 }
@@ -38,4 +40,11 @@
 .meme-author {
     margin: 8px;
     color: #333;
+}
+
+@media screen and (max-width: 1440px) {
+    .meme-generator img {
+        height: 430px;
+    }
+    
 }
